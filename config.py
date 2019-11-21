@@ -12,7 +12,8 @@ connex_app = connexion.App(__name__, specification_dir=basedir)
 app = connex_app.app
 
 # Build the Sqlite ULR for SqlAlchemy
-postgres_url = 'postgresql://postgres:admin@localhost/telusko'
+#postgres_url = 'postgresql://postgres:admin@localhost/telusko'
+postgres_url = 'postgresql://postgres:adminadmin@testdatabase.cni4eoms02tt.us-west-2.rds.amazonaws.com:5432/testdatabase'
 
 # Configure the SqlAlchemy part of the app instance
 app.config["SQLALCHEMY_ECHO"] = True
